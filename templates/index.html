@@ -91,6 +91,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 	      <div class="w3-display-container">
           <img src="{{ url_for('static', filename='art.jpg')}}" style="width:100%">
           <p>Tablette Montjoie<br><b>4.99€</b></p>
+          <div class="w3-display-middle w3-display-hover w3-hide-small">
+            <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
+          </div>
 		    </div>
       </div>
       <div class="w3-container">
@@ -107,7 +110,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <img src="{{ url_for('static', filename='mil.jpg')}}" style="width:100%">
         <span class="w3-tag w3-display-topleft">Nouveau</span>
         <div class="w3-display-middle w3-display-hover">
-          <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       <p>L'An Mil<br><b>19.99€</b></p>
@@ -131,7 +134,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <img src="{{ url_for('static', filename='lebrun.jpg')}}" style="width:100%">
         <span class="w3-tag w3-display-topleft">À croquer !</span>
         <div class="w3-display-middle w3-display-hover w3-hide-small">
-          <button class="w3-button w3-black">Acheter<i class="fa fa-shopping-cart"></i></button>
+          <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
         </div>
       </div>
       <p>Philippe IV le Brun<br><b class="w3-text-red">24.99€</b></p>
@@ -147,19 +150,25 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <p>La pucelle d'Orléan<br><b class="w3-text-red">24.99€</b></p>
     </div>-->
   </div>
-	<!--
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <img src="/w3images/jeans4.jpg" style="width:100%">
-        <p>Autre chocolat<br><b>14.99€</b></p>
-      </div>
-      <div class="w3-container">
-        <img src="/w3images/jeans1.jpg" style="width:100%">
-        <p>Autre chocolat<br><b>24.99€</b></p>
+	<div class="w3-col l3 s6">
+    <div class="w3-container">
+      <div class="w3-display-container w3-grayscale">
+        <img src="{{ url_for('static', filename='bokassa.png')}}" style="width:100%">
+        <p>Montjoie surprise<br><b>4.99€</b></p>
       </div>
     </div>
-	-->
+    <div class="w3-container">
+      <div class="w3-display-container w3-grayscale">
+        <img src="{{ url_for('static', filename='darc.png')}}" style="width:100%">
+        <span class="w3-tag w3-display-topleft ">À tartiner !</span>
+        <div class="w3-display-middle w3-display-hover w3-hide-small">
+          <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+      <p>Pot Montjoie d'Arc<br><b>19.99€</b></p>
+    </div>
   </div>
+</div>
 	
   <!-- Subscribe section -->
   <div class="w3-container w3-black w3-padding-32">
@@ -188,7 +197,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <h4>About</h4>
         <p><a href="#">À propos</a></p>
         <p><a href="#">Support</a></p>
-        <p><a href="#">Terre de France</a></p>
+        <p><a href="https://www.terredefrance.fr/">Terre de France</a></p>
         <p><a href="#">Livraison</a></p>
         <p><a href="#">Placements de produits</a></p>
       </div>
