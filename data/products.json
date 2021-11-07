@@ -59,5 +59,11 @@
         "price":19.99,
         "image":"darc.png",
         "comment":null
+    },
+    {
+        "name":"Pot Montjoie d'Arc",
+        "price":19.99,
+        "image":"darc.png",
+        "comment":null
     }
 ]
