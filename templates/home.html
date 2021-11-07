@@ -81,18 +81,28 @@
 
       <!-- Product grid -->
       <div class="w3-row">
-        {% for product in products %}
-            <div class="w3-container">
-                <div class="w3-display-container">
-                    <img src="{{ url_for('static', filename=product.image)}}" style="width:100%">
-                    <span class="w3-tag w3-display-topleft">{{product.content}}</span>
-                    <p>{{product.name}}<br><b>{{product.price}}€</b></p>
-                    <div class="w3-display-middle w3-display-hover w3-hide-small">
-                    <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
+            {% for idx,product in products %}
+                {% if idx%2==0 %}
+                    <div class="w3-col l3 s6">
+                {% endif %}
+                {% if product.name %}
+                        <div class="w3-container">
+                            <div class="w3-display-container w3-grayscale">
+                                <img src="{{ url_for('static', filename=product.image)}}" style="width:100%">
+                                {% if product.content %}
+                                    <span class="w3-tag w3-display-topleft">{{product.content}}</span>
+                                {% endif %}
+                                <p>{{product.name}}<br><b>{{product.price}}€</b></p>
+                                <div class="w3-display-middle w3-display-hover w3-hide-small">
+                                    <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                {% endif %}
+                {% if idx%2==1 %}
                     </div>
-                </div>
-            </div>
-        {% endfor %}
+                {% endif %}
+            {% endfor %}
       </div>
       <!-- Subscribe section -->
       <div class="w3-container w3-black w3-padding-32">

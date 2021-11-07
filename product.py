@@ -11,4 +11,7 @@ class Product:
 
 
 def load_products():
-    return [Product(**product_dict) for product_dict in read_json("products.json")]
+    products = [Product(**product_dict) for product_dict in read_json("products.json")]
+    if len(products)%2 == 1:
+        products.append(Product(None,None,None,None))
+    return products
