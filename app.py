@@ -6,6 +6,7 @@ Created on Mon Nov  1 16:02:11 2021
 """
 from flask import Flask, render_template,request,redirect,url_for
 import webbrowser
+from product import load_products
 
 
 app = Flask(__name__)

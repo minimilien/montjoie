@@ -1,0 +1,62 @@
+[
+    {
+        "name":"Lys chocolaté",
+        "price":9.99,
+        "image":"barre.png",
+        "comment":null
+    },
+    {
+        "name":"Tablette Montjoie",
+        "price":4.99,
+        "image":"art.jpg",
+        "comment":null
+    },
+    {
+        "name":"Le Saint Louis",
+        "price":20.50,
+        "image":"louis.png",
+        "comment":null
+    },
+    {
+        "name":"L'An Mil",
+        "price":19.99,
+        "image":"mil.jpg",
+        "comment":null
+    },
+    {
+        "name":"Tablette Imériale",
+        "price":29.99,
+        "image":"napoleon.png",
+        "comment":null
+    },
+    {
+        "name":"Le Baptiste",
+        "price":99.99,
+        "image":"baptiste.png",
+        "comment":"Bientôt disponible"
+    },
+    {
+        "name":"Philippe IV le Brun",
+        "price":24.99,
+        "image":"lebrun.jpg",
+        "comment":"À croquer !"
+    },
+    {
+        "name":"Super Louis",
+        "price":29.99,
+        "image":"superlouis.png",
+        "comment":"Notre sélection"
+    },
+    {
+        "name":"Roses de Godefroy",
+        "price":14.99,
+        "image":"rose.png",
+        "comment":null
+    },
+    {
+        "name":"Pot Montjoie d'Arc",
+        "price":19.99,
+        "image":"darc.png",
+        "comment":null
+    }
+]
