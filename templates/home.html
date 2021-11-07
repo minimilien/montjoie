@@ -90,9 +90,7 @@
                         <div class="w3-container">
                             <div class="w3-display-container w3-grayscale">
                                 <img src="{{ url_for('static', filename=product.image)}}" style="width:100%">
-                                {% if product.content %}
-                                    <span class="w3-tag w3-display-topleft">{{product.content}}</span>
-                                {% endif %}
+                                <span class="w3-tag w3-display-topleft">{{product.content}}</span>
                                 <p>{{product.name}}<br><b>{{product.price}}€</b></p>
                                 <div class="w3-display-middle w3-display-hover w3-hide-small">
                                     <button class="w3-button w3-black">Acheter <i class="fa fa-shopping-cart"></i></button>
