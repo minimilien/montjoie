@@ -4,7 +4,7 @@ Created on Mon Nov  1 16:02:11 2021
 
 @author: minimilien
 """
-from flask import Flask, render_template,request,jsonify,redirect,url_for
+from flask import Flask, render_template,request,redirect,url_for
 import webbrowser
 
 
