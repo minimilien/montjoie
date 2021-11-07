@@ -59,5 +59,17 @@
         "price":19.99,
         "image":"darc.png",
         "comment":null
+    },
+    {
+        "name":"Pot Montjoie d'Arc",
+        "price":19.99,
+        "image":"darc.png",
+        "comment":null
+    },
+    {
+        "name":"Raffu",
+        "price":100000,
+        "image":"raff.jpeg",
+        "comment":"trop mignon"
     }
 ]
