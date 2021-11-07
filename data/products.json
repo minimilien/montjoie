@@ -12,6 +12,12 @@
         "comment":null
     },
     {
+        "name":"Super Louis",
+        "price":29.99,
+        "image":"superlouis.png",
+        "comment":"Notre sélection"
+    },
+    {
         "name":"Le Saint Louis",
         "price":20.50,
         "image":"louis.png",
@@ -41,12 +47,7 @@
         "image":"lebrun.jpg",
         "comment":"À croquer !"
     },
-    {
-        "name":"Super Louis",
-        "price":29.99,
-        "image":"superlouis.png",
-        "comment":"Notre sélection"
-    },
+    
     {
         "name":"Roses de Godefroy",
         "price":14.99,
