@@ -13,31 +13,24 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def index():
+def index() -> str:
+    """Main template."""
     return render_template(
         "index.html",
     )
 
 
 @app.route('/home')
-def home():
+def home() -> str:
+    """Future main template."""
     return render_template(
         "home.html",
         products=enumerate(load_products())
     )
 
 
-@app.route('/', methods=['POST'])
-def submit():
-    val = request.form.to_dict()
-    print(val)
-    return render_template(
-        'index.html'
-    )
-
-
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found(e) -> str:
     print(e)
     return redirect(url_for('index'))
 
